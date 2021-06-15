@@ -10,9 +10,8 @@ try {
             )";
 
     // eksekusi perintah diatas, simpan status berhasil atau tidak dalam variabel $hasil
-    $hasil = $conn->exec($sql);
+    $hasil = $conn->query($sql);
 
-    var_dump($hasil);
     // cek status pembuatan tabel , apakah berhasil atau tidak
     if ($hasil) {
         echo "Berhasil membuat tabel<br>";

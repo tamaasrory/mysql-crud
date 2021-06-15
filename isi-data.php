@@ -5,7 +5,7 @@ try {
     $sql = "INSERT INTO kawan_main_ff (nama, kelas, tgl_lahir) VALUES ('Aldo', '1', '2005-06-01')";
 
     // eksekusi perintah diatas, simpan status berhasil atau tidak dalam variabel $hasil
-    $hasil = $conn->exec($sql);
+    $hasil = $conn->query($sql);
 
     // cek status apakah proses penyimpanan data berhasil atau tidak
     if ($hasil) {
